@@ -12,7 +12,12 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "jsx": "preserve"
+        "jsx": "preserve",
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "@components/templates": ["/components/templates/index.ts"]
+        }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]
