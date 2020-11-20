@@ -1,12 +1,14 @@
 import Head from 'next/head';
-import styled from 'styled-components';
-import {} from '@components/templates';
+import { Deving } from '@components/templates/Deving';
 
 export default function Home() {
     return (
-        <Head>
-            <title>Hello Liam!</title>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <>
+            <Head>
+                <title>Hello Liam!</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <Deving />
+        </>
     );
 }

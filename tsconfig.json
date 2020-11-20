@@ -13,10 +13,9 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "preserve",
-        "rootDir": ".",
-        "baseUrl": ".",
+        "baseUrl": "./",
         "paths": {
-            "@components/templates": ["/components/templates/index.ts"]
+            "@components/*": ["components/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
