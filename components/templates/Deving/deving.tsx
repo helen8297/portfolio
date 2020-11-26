@@ -1,16 +1,18 @@
 import React from 'react';
 
-import { LinkButton } from '@components/atoms';
-import { MainHeading, NavBar } from '@components/molecules';
+import { LinkButton, FramedImage } from '@components/atoms';
 
 export function Deving() {
     return (
         <div>
-            <NavBar />
-            <MainHeading
-                heading="Hello, I'm Helen"
-                subHeading="Full Stack Developer"
-                emoji="👋🏼"
+            <LinkButton>
+                <span style={{ fontSize: '40px' }}>😈</span>
+                <span>Child</span>
+                <span style={{ fontSize: '40px' }}>😈</span>
+            </LinkButton>
+            <FramedImage
+                img={'https://via.placeholder.com/150'}
+                alt="Oh hello"
             />
         </div>
     );
