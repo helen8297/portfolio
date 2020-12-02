@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { LinkButton, FramedImage, BlogCard } from '@components/atoms';
+import { AboutSection } from '@components/organisms';
 
 export function Deving() {
     return (
@@ -20,6 +21,7 @@ export function Deving() {
                 title="Blog card title"
                 date="today"
             />
+            <AboutSection />
         </div>
     );
 }
