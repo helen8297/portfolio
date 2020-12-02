@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LinkButton, FramedImage } from '@components/atoms';
+import { LinkButton, FramedImage, BlogCard } from '@components/atoms';
 
 export function Deving() {
     return (
@@ -13,6 +13,12 @@ export function Deving() {
             <FramedImage
                 img={'https://via.placeholder.com/150'}
                 alt="Oh hello"
+            />
+            <BlogCard
+                img={'https://via.placeholder.com/150'}
+                alt="Oh hello"
+                title="Blog card title"
+                date="today"
             />
         </div>
     );
