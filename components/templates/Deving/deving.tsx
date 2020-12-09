@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { BlogSection } from '@components/organisms';
+import { ContactSection } from '@components/organisms';
 
 export function Deving() {
     return (
         <div>
             <p>Hi</p>
-            <BlogSection />
+            <ContactSection />
         </div>
     );
 }
