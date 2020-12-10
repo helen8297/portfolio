@@ -8,8 +8,8 @@ export const PortfolioSection: React.FC = () => {
         <section>
             <h2>Portfolio</h2>
 
-            {Portfolio.map(({ img, alt }) => {
-                return <FramedImage img={img} alt={alt} />;
+            {Portfolio.map(({ img, alt, title }) => {
+                return <FramedImage img={img} alt={alt} key={title} />;
             })}
 
             <a href="#">...more</a>

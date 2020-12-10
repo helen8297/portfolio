@@ -1,23 +1,7 @@
-import Head from 'next/head';
-import styled from 'styled-components';
+import React from 'react';
 
-import { Deving } from '@components/templates/Deving';
+import { Home } from '@components/templates';
 
-const Emo = styled.div`
-    background: black;
-    height: 100vh;
-`;
-
-export default function Home() {
-    return (
-        <>
-            <Head>
-                <title>Hello Liam!</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <Emo>
-                <Deving />
-            </Emo>
-        </>
-    );
+export default function HomePage() {
+    return <Home />;
 }
