@@ -12,7 +12,7 @@ export const StyledLinkButtonA = styled.a`
 
     &:hover,
     &:focus {
-        border-color: #2cdab1;
+        border-color: #361c39;
         text-decoration: underline;
     }
 `;
