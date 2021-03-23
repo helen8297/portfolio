@@ -12,17 +12,15 @@ export function BlogSection() {
     const [loadState, setLoading] = useState<'waiting' | 'finished'>('waiting');
 
     useEffect(() => {
-        const getBlogs = async () => {
+        (async () => {
             const response = await fetch(
                 'https://dev.to/api/articles?username=helen8297'
             );
-            await timeout(10000);
+            await timeout(1000);
             const data: DevToArticleResults[] = await response.json();
             setLoading('finished');
             setBlogData(data);
-        };
-
-        getBlogs();
+        })();
     }, []);
 
     return (

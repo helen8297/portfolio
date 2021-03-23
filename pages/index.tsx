@@ -1,14 +1,7 @@
-import Head from 'next/head';
-import { Deving } from '@components/templates/Deving';
+import React from 'react';
 
-export default function Home() {
-    return (
-        <>
-            <Head>
-                <title>Hello Liam!</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <Deving />
-        </>
-    );
+import { Home } from '@components/templates';
+
+export default function HomePage() {
+    return <Home />;
 }
