@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-injectGlobal`@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&display=swap');
-
-`;
-
 export const StyledMainHeading = styled.header`
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -12,7 +8,7 @@ export const StyledMainHeading = styled.header`
     grid-template-areas:
         'Text Emoji'
         'job-title Emoji';
-    background-color: #ffb700;
+    background-color: ${({ theme }) => theme.colours.light.background.one};
     margin-top: 50px;
 
     @media screen and (max-width: 700px) {
@@ -25,7 +21,6 @@ export const StyledMainHeading = styled.header`
 
 export const StyledH1 = styled.h1`
     grid-area: Text;
-    font-family: 'Fredoka One', cursive;
     color: White;
     font-size: 3em;
     margin: 0;
@@ -35,7 +30,6 @@ export const StyledH1 = styled.h1`
 
 export const StyledJobTitle = styled.p`
     grid-area: job-title;
-    font-family: 'Raleway', sans-serif;
     color: White;
     margin: 0;
     font-size: 1.5em;

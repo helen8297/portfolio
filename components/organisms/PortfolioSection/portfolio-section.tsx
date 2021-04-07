@@ -9,7 +9,9 @@ export const PortfolioSection: React.FC = () => {
             <h2>Portfolio</h2>
 
             {Portfolio.map(({ img, alt, title }) => {
-                return <FramedImage img={img} alt={alt} key={title} />;
+                return (
+                    <FramedImage img={img} alt={alt} key={title} width={200} />
+                );
             })}
 
             <a href="#">...more</a>
