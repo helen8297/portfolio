@@ -1,12 +1,18 @@
-import '../styles/globals.css';
+import React from 'react';
 import type { AppProps } from 'next/app';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+
 import GlobalStyles from '../styles/GlobalStyles';
-import theme from '../styles/Theme';
+import { darkTheme, lightTheme } from '../styles/Theme';
+
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
+    const [theme, setTheme] = React.useState(lightTheme);
     return (
         <ThemeProvider theme={theme}>
+            <button onClick={() => setTheme(darkTheme)}>Dark Theme</button>
+            <button onClick={() => setTheme(lightTheme)}>Light Theme</button>
             <GlobalStyles />
             <Component {...pageProps} />
         </ThemeProvider>

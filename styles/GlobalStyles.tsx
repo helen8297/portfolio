@@ -64,13 +64,13 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.6rem
   }
   a{
-    color: ${({ theme }): string => theme.colours.light.text.link.display};
+    color: ${({ theme }): string => theme.colours.text.link.display};
     
     &:hover, &:focus{
-      color: ${({ theme }): string => theme.colours.light.text.link.focus};  
+      color: ${({ theme }): string => theme.colours.text.link.focus};  
     }
     &.is-active{
-      ${({ theme }): string => theme.colours.light.text.link.active};
+      ${({ theme }): string => theme.colours.text.link.active};
       
     }
     &.multiline{

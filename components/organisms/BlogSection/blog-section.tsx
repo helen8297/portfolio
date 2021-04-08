@@ -34,6 +34,7 @@ export function BlogSection() {
                         <BlogCard
                             img={articleDetails?.social_image}
                             alt="blogpost cover"
+                            width={200}
                             title={articleDetails?.title}
                             date={articleDetails?.created_at}
                         />

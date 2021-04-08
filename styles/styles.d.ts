@@ -24,10 +24,7 @@ declare module 'styled-components' {
     }
 
     export interface DefaultTheme {
-        colours: {
-            light: Colours;
-            dark: Colours;
-        };
+        colours: Colours;
         spacing: {
             large: string;
             medium: string;

@@ -8,7 +8,7 @@ export const StyledMainHeading = styled.header`
     grid-template-areas:
         'Text Emoji'
         'job-title Emoji';
-    background-color: ${({ theme }) => theme.colours.light.background.one};
+    background-color: ${({ theme }) => theme.colours.background.one};
     margin-top: 50px;
 
     @media screen and (max-width: 700px) {

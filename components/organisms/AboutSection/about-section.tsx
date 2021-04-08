@@ -17,6 +17,7 @@ export const AboutSection: React.FC = () => {
             <FramedImage
                 img={'https://via.placeholder.com/150'}
                 alt="Oh hello"
+                width={200}
             />
             <a href="#">...more</a>
             <footer>If you'd like to chat, please get in touch!</footer>
