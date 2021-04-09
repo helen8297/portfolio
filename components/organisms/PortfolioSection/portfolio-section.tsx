@@ -2,6 +2,7 @@ import React from 'react';
 
 import { FramedImage } from '@components/atoms';
 import { Portfolio } from '../../../libs/portfolio';
+import { StyledFramedImage } from './portfolio-section.styled';
 
 export const PortfolioSection: React.FC = () => {
     return (
@@ -10,7 +11,12 @@ export const PortfolioSection: React.FC = () => {
 
             {Portfolio.map(({ img, alt, title }) => {
                 return (
-                    <FramedImage img={img} alt={alt} key={title} width={200} />
+                    <StyledFramedImage
+                        img={img}
+                        alt={alt}
+                        key={title}
+                        width={'20rem'}
+                    />
                 );
             })}
 
