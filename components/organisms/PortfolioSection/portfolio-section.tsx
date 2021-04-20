@@ -15,7 +15,7 @@ export const PortfolioSection: React.FC = () => {
                         img={img}
                         alt={alt}
                         key={title}
-                        width={'20rem'}
+                        width={200}
                     />
                 );
             })}

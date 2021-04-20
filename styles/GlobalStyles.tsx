@@ -28,7 +28,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Fredoka One', cursive;;
     letter-spacing: 0.2rem;
     line-height: 1.1;
-    margin: 1rem 0;
   }
   pre {
     white-space: pre-wrap;
