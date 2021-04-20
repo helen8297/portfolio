@@ -21,7 +21,7 @@ export const Home: React.FC = () => (
         <MainHeading
             heading="Hello, I'm Helen"
             subHeading="Frontend Master"
-            emoji="🔥"
+            emoji="👋🏼"
         />
         <AboutSection />
         <PortfolioSection />

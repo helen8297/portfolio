@@ -10,7 +10,7 @@ export const BlogCard = ({
 }: PropsWithChildren<TBlogCardProperties>): ReactElement => {
     return (
         <span>
-            <img src={img} alt={alt} />
+            <img src={img} alt={alt} width={400} />
             <p>{title}</p>
             <p>{date}</p>
         </span>

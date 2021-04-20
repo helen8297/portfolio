@@ -3,4 +3,5 @@ export type TBlogCardProperties = {
     alt: string;
     title: string;
     date: string;
+    width: number;
 };
