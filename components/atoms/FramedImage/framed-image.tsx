@@ -7,6 +7,9 @@ export function FramedImage({
     img,
     alt,
     width,
+    className,
 }: PropsWithChildren<TFramedImageProperties>): ReactElement {
-    return <StyledImg src={img} alt={alt} width={width} />;
+    return (
+        <StyledImg src={img} alt={alt} width={width} className={className} />
+    );
 }

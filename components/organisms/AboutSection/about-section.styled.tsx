@@ -4,16 +4,17 @@ import { FramedImage } from '@components/atoms';
 
 export const StyledAboutSection = styled.section`
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 15% 45% 20% 20%;
+    margin: auto;
     gap: 3px 3px;
+
     grid-template-areas:
-        'blank header'
-        'text image'
-        'more-link image'
-        'footer image';
+        'blank blank header'
+        'text text image'
+        'more-link more-link image'
+        'footer footer footer ';
 
     max-width: 1170px;
+    background: ${({ theme }) => theme.colours.background.two}; ;
 `;
 
 export const StyledH2 = styled.h2`
@@ -26,6 +27,7 @@ export const StyledH2 = styled.h2`
 export const StyledAboutText = styled.p`
     margin: 0;
     grid-area: text;
+    padding: 4rem;
 `;
 
 export const StyledMoreLink = styled.a`

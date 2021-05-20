@@ -12,20 +12,21 @@ import {
 
 export const Home: React.FC = () => (
     <React.Fragment>
-        <Head>
-            <title>Hello Liam!</title>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
-
-        <NavBar />
-        <MainHeading
-            heading="Hello, I'm Helen"
-            subHeading="Frontend Master"
-            emoji="👋🏼"
-        />
-        <AboutSection />
-        <PortfolioSection />
-        <BlogSection />
-        <ContactSection />
+        <div>
+            <Head>
+                <title>Hello Liam!</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <NavBar />
+            <MainHeading
+                heading="Hello, I'm Helen"
+                subHeading="Junior Frontend Engineer"
+                emoji="👋🏼"
+            />
+            <AboutSection />
+            <PortfolioSection />
+            <BlogSection />
+            <ContactSection />
+        </div>
     </React.Fragment>
 );
