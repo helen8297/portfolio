@@ -2,26 +2,35 @@ import React from 'react';
 
 import { FramedImage } from '@components/atoms';
 import { Portfolio } from '../../../libs/portfolio';
-import { StyledFramedImage } from './portfolio-section.styled';
+import {
+    StyledFramedImage,
+    StyledDiv,
+    StyledSection,
+    StyledGridContainerDiv,
+    StyledHeader,
+    StyledLink,
+} from './portfolio-section.styled';
 
 export const PortfolioSection: React.FC = () => {
     return (
-        <section>
-            <h2>Portfolio</h2>
+        <StyledSection>
+            <StyledGridContainerDiv>
+                <StyledHeader>Portfolio</StyledHeader>
+                <StyledDiv>
+                    {Portfolio.map(({ img, alt, title }) => {
+                        return (
+                            <StyledFramedImage
+                                img={img}
+                                alt={alt}
+                                key={title}
+                                width={200}
+                            />
+                        );
+                    })}
+                </StyledDiv>
 
-            {Portfolio.map(({ img, alt, title }) => {
-                return (
-                    <StyledFramedImage
-                        img={img}
-                        alt={alt}
-                        key={title}
-                        width={200}
-                    />
-                );
-            })}
-
-            <a href="#">...more</a>
-            <footer>If you'd like to chat, please get in touch!</footer>
-        </section>
+                <StyledLink href="#">...more</StyledLink>
+            </StyledGridContainerDiv>
+        </StyledSection>
     );
 };
