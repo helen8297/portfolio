@@ -19,7 +19,7 @@ export function BlogSection() {
             await timeout(1000);
             const data: DevToArticleResults[] = await response.json();
             setLoading('finished');
-            setBlogData(data);
+            setBlogData(data.slice(0, 6));
         })();
     }, []);
 

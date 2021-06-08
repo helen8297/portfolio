@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledMainHeading = styled.header`
+    background-color: ${({ theme }) => theme.colours.background.one};
+    padding: 5rem;
+`;
+
+export const StyledGridContainer = styled.div`
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -10,6 +15,8 @@ export const StyledMainHeading = styled.header`
         'job-title Emoji';
     background-color: ${({ theme }) => theme.colours.background.one};
     margin-top: 50px;
+    max-width: 1170px;
+    margin: auto;
 
     @media screen and (max-width: 700px) {
         grid-template-areas:

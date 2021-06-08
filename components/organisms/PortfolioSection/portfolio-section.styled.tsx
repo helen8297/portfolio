@@ -13,9 +13,9 @@ export const StyledGridContainerDiv = styled.div`
     /* gap: 1rem 5rem; */
 
     grid-template-areas:
-        '. header'
-        'portfolio portfolio'
-        '. more-link';
+        'header . .'
+        'portfolio portfolio portfolio'
+        '. . more-link';
 
     max-width: 1170px;
 `;
@@ -31,8 +31,8 @@ export const StyledFramedImage = styled(FramedImage)`
 export const StyledDiv = styled.div`
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     max-width: 1170px;
-    border: solid red 3px;
     grid-area: portfolio;
 `;
 

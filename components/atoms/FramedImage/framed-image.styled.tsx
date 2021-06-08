@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const StyledImg = styled.img`
     object-fit: contain;
-    height: 20rem;
+    height: 24rem;
 `;
 
 export const StyledDiv = styled.div`
-    width: 30rem;
-    height: 22rem;
+    width: 40rem;
+    height: 26rem;
     background-color: white;
     margin: 2rem;
     display: flex;

@@ -14,8 +14,11 @@ export const Home: React.FC = () => (
     <React.Fragment>
         <div>
             <Head>
-                <title>Hello Liam!</title>
-                <link rel="icon" href="/favicon.ico" />
+                <title>helenkent.dev</title>
+                <link
+                    rel="icon"
+                    href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/balloon_1f388.png"
+                />
             </Head>
             <NavBar />
             <MainHeading
