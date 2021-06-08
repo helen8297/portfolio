@@ -13,9 +13,9 @@ export const StyledGridContainerDiv = styled.div`
     /* gap: 1rem 5rem; */
 
     grid-template-areas:
-        'blank header'
+        '. header'
         'portfolio portfolio'
-        'blank more-link';
+        '. more-link';
 
     max-width: 1170px;
 `;
