@@ -3,9 +3,14 @@ import styled from 'styled-components';
 import { FramedImage } from '@components/atoms';
 
 export const StyledAboutSection = styled.section`
+    background: ${({ theme }) => theme.colours.background.two};
+    padding: 5rem;
+`;
+
+export const StyledAboutInnerDiv = styled.div`
     display: grid;
     margin: auto;
-    gap: 3px 3px;
+    gap: 1rem 5rem;
 
     grid-template-areas:
         'blank blank header'
@@ -14,7 +19,6 @@ export const StyledAboutSection = styled.section`
         'footer footer footer ';
 
     max-width: 1170px;
-    background: ${({ theme }) => theme.colours.background.two}; ;
 `;
 
 export const StyledH2 = styled.h2`
@@ -27,7 +31,6 @@ export const StyledH2 = styled.h2`
 export const StyledAboutText = styled.p`
     margin: 0;
     grid-area: text;
-    padding: 4rem;
 `;
 
 export const StyledMoreLink = styled.a`
@@ -35,8 +38,10 @@ export const StyledMoreLink = styled.a`
     grid-area: more-link;
 `;
 
-export const StyledFramedImage = styled(FramedImage)`
+export const StyledImage = styled.img`
     grid-area: image;
+    align-self: center;
+    border: solid white 5px;
 `;
 
 export const StyledAboutFooter = styled.footer`
