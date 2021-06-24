@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 
 import { TMainHeadingProperties } from './main-heading.types';
 import {
@@ -6,6 +6,7 @@ import {
     StyledJobTitle,
     StyledH1,
     StyledEmojiSpan,
+    StyledGridContainer,
 } from './main-heading.styled';
 
 export function MainHeading({
@@ -15,9 +16,11 @@ export function MainHeading({
 }: TMainHeadingProperties): ReactElement {
     return (
         <StyledMainHeading>
-            <StyledH1>{heading}</StyledH1>
-            <StyledJobTitle>{subHeading}</StyledJobTitle>
-            <StyledEmojiSpan>{emoji}</StyledEmojiSpan>
+            <StyledGridContainer>
+                <StyledH1>{heading}</StyledH1>
+                <StyledJobTitle>{subHeading}</StyledJobTitle>
+                <StyledEmojiSpan>{emoji}</StyledEmojiSpan>
+            </StyledGridContainer>
         </StyledMainHeading>
     );
 }

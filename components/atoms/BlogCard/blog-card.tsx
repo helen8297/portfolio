@@ -1,5 +1,10 @@
 import React, { Props, PropsWithChildren, ReactElement } from 'react';
-
+import {
+    StyledDiv,
+    StyledBlogImg,
+    StyledTitle,
+    StyledDate,
+} from './blog-card.styled';
 import { TBlogCardProperties } from './blog-card.types';
 
 export const BlogCard = ({
@@ -9,10 +14,15 @@ export const BlogCard = ({
     date,
 }: PropsWithChildren<TBlogCardProperties>): ReactElement => {
     return (
-        <span>
-            <img src={img} alt={alt} width={400} />
-            <p>{title}</p>
-            <p>{date}</p>
-        </span>
+        <StyledDiv>
+            <StyledBlogImg src={img} alt={alt} />
+            <StyledTitle>{title}</StyledTitle>
+            <StyledDate>
+                {new Intl.DateTimeFormat('en-GB', {
+                    month: 'long',
+                    year: 'numeric',
+                }).format(new Date(date))}
+            </StyledDate>
+        </StyledDiv>
     );
 };

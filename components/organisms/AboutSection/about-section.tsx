@@ -22,11 +22,7 @@ export const AboutSection: React.FC = () => {
                     the tech career I’ve always dreamed of. The School of Code
                     bootcamp made this possible and I LOVED learning full stack
                     development! I’m currently coding with HTML, CSS,
-                    JavaScript, React and NodeJS. In January 2020, I left a 10
-                    year teaching career to pursue the tech career I’ve always
-                    dreamed of. The School of Code bootcamp made this possible
-                    and I LOVED learning full stack development! I’m currently
-                    coding with HTML, CSS, JavaScript, React and NodeJS.
+                    JavaScript, React and NodeJS.
                 </StyledAboutText>
                 <StyledImage src={myface} alt="Helen Kent" width={150} />
                 <StyledMoreLink href="#">...more</StyledMoreLink>

@@ -13,7 +13,7 @@ export const StyledAboutInnerDiv = styled.div`
     gap: 1rem 5rem;
 
     grid-template-areas:
-        'blank blank header'
+        '. . header'
         'text text image'
         'more-link more-link image'
         'footer footer footer ';
