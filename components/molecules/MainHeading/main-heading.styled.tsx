@@ -7,8 +7,6 @@ export const StyledMainHeading = styled.header`
 
 export const StyledGridContainer = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
         'Text Emoji'
@@ -20,9 +18,9 @@ export const StyledGridContainer = styled.div`
 
     @media screen and (max-width: 700px) {
         grid-template-areas:
-            'Text Text'
-            'job-title job-title'
-            'Emoji Emoji';
+            'Emoji'
+            'Text'
+            'job-title';
     }
 `;
 
@@ -47,8 +45,9 @@ export const StyledJobTitle = styled.p`
 export const StyledEmojiSpan = styled.span`
     grid-area: Emoji;
     font-size: 10rem;
+    justify-self: end;
 
     @media screen and (max-width: 700px) {
-        font-size: 4rem;
+        font-size: 8rem;
     }
 `;

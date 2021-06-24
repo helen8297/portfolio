@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Head from 'next/head';
 
@@ -10,17 +11,19 @@ import {
     ContactSection,
 } from '@components/organisms';
 
+const Main = styled.main``;
+
 export const Home: React.FC = () => (
     <React.Fragment>
-        <div>
-            <Head>
-                <title>helenkent.dev</title>
-                <link
-                    rel="icon"
-                    href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/balloon_1f388.png"
-                />
-            </Head>
-            <NavBar />
+        <Head>
+            <title>helenkent.dev</title>
+            <link
+                rel="icon"
+                href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/balloon_1f388.png"
+            />
+        </Head>
+        <NavBar />
+        <Main>
             <MainHeading
                 heading="Hello, I'm Helen"
                 subHeading="Junior Frontend Engineer"
@@ -29,7 +32,7 @@ export const Home: React.FC = () => (
             <AboutSection />
             <PortfolioSection />
             <BlogSection />
-            <ContactSection />
-        </div>
+        </Main>
+        <ContactSection />
     </React.Fragment>
 );

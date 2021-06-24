@@ -2,6 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 import { DevToArticleResults } from './blog-section.types';
 import { BlogCard } from '@components/atoms';
+import {
+    StyledBlogHeading,
+    StyledGridContainerDiv,
+    StyledBlogSection,
+    StyledOuterGridContainer,
+    StyledMoreLink,
+} from './blog-section.styled';
 
 function timeout(ms: number) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -24,22 +31,25 @@ export function BlogSection() {
     }, []);
 
     return (
-        <div>
-            {loadState === 'waiting' && <h1>Hold your horses</h1>}
-            {loadState === 'finished' &&
-                blogData !== undefined &&
-                blogData.map(articleDetails => (
-                    <React.Fragment key={articleDetails.id}>
-                        <p>{articleDetails.title}</p>
-                        <BlogCard
-                            img={articleDetails?.social_image}
-                            alt="blogpost cover"
-                            width={200}
-                            title={articleDetails?.title}
-                            date={articleDetails?.created_at}
-                        />
-                    </React.Fragment>
-                ))}
-        </div>
+        <StyledBlogSection>
+            <StyledOuterGridContainer>
+                <StyledBlogHeading>Blog</StyledBlogHeading>
+                {loadState === 'waiting' && <h1>Hold your horses</h1>}
+                {loadState === 'finished' && blogData !== undefined && (
+                    <StyledGridContainerDiv>
+                        {blogData.map(articleDetails => (
+                            <BlogCard
+                                img={articleDetails?.social_image}
+                                alt="blogpost cover"
+                                key={articleDetails.id}
+                                title={articleDetails?.title}
+                                date={articleDetails?.created_at}
+                            />
+                        ))}
+                    </StyledGridContainerDiv>
+                )}
+                <StyledMoreLink href="#">...more</StyledMoreLink>
+            </StyledOuterGridContainer>
+        </StyledBlogSection>
     );
 }
